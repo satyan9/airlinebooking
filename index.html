@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airlines Booking</title>
+    <link rel="icon" type="image/x-icon" href="1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f06bc0af44.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+            <div id="home">
+              <div class="navbar">
+                <div class="img">
+                  <img src="1.jpg" width="45px" height="45px"></div>
+                  <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a> 
+                  <a href="#Flight"><i class="fa fa-plane"></i> Flight</a> 
+                  <a href="#Hotel"><i class="fa fa-bed"></i> Hotel</a> 
+                  <a href="#Cab"><i class="fa fa-fw fa-taxi"></i> Cab</a> 
+                  
+                  <a href="#Contact"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+                  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+                  <a href="#"><i class="fa fa-check-circle"></i> Status</a>
+                   <input type="text" placeholder="Search...."> 
+                   <div class="nac">
+                     <i class="fa fa-search"></i>
+                   </div>   
+              </div>
+            </div>
+            <div class="s1" >
+               <br><br> <br><br>
+
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="a3.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="hoteloffers2.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="cabcoupons3.jpg" style="width:100%">
+                  <div class="text"></div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              
+                <br>
+                <br>
+              </div>
+             
+
+                
+          <div class="cal" id="Flight">  <div class="container">
+
+                <form class="form-group">
+                  <center>  <h1 class="text-center" >Airline Booking Form</h1></center>
+                    <br><br><br>
+                    <div id="form">
+                        <h3 class="text-white">Booking Details</h3>
+                        <p><br></p>
+                        
+        
+                    <div id="input">
+                        <input type="text" id="input-group" placeholder="From">
+                        <input type="text" id="input-group" placeholder="To">
+                        <p><br></p>
+                        <input type="text" id="input-group" placeholder="Departure Date">
+                        <input type="text" id="input-group" placeholder="Departure Time">
+                        <p><br></p>
+                        <select  id="input-group" style="background: black;">
+                            <option value="">Preffered Airline</option>
+                            <option value="">IndoGo</option>
+                            <option value="">AirIndia</option>
+                            <option value="">SpiceJet</option>
+                        </select>
+                        <select  id="input-group" style="background: black;">
+                            <option value="">Preffered Seating</option>
+                            <option value="">Economy Class</option>
+                            <option value="">Business Class</option>
+                            <option value="">First Class</option>
+                        </select>
+                        </div>
+                        <p><br></p>
+        
+                        <div id="input2">
+                            <input type="number" id="input-group" placeholder="Adult">
+                            <input type="number" id="input-group" placeholder="Children(2-11years)">
+                            <input type="number" id="input-group" placeholder="infant(under 2years)">
+                        </div>
+                        <p><br></p>
+        
+                        <div id="input3">
+                            <span id="input-group" class="text-primary">Select Your Fare</span> 
+                            <input type="radio" id="input-group" name="r">
+                            <label class="text-white" for="input-group">One Way</label>
+                            <input type="radio" id="input-group" name="r">
+                            <label class="text-white" for="input-group">Round Trip</label>
+                        </div>
+                        <p><br></p>
+        
+                        <div id="input4">
+                            <input type="text" id="input-group" placeholder="Return Date">
+                            <input type="text" id="input-group" placeholder="Return time">
+                            <input type="text" id="input-group1" placeholder="Any Message">
+                        </div>
+                        <p><br></p>
+                        <div id="input5">
+                            <h3 class="text-white">Personal Details</h3>
+                        </div>
+        
+                        <div id="input6">
+                            <input type="text" id="input-group" placeholder="Full Nmae">
+                            <input type="number" id="input-group" placeholder="Phone Number">
+                            <input type="email" id="input-group1" placeholder="Email">
+                        </div>
+                        <p><br></p>
+                        <button type="submit" class="button2" onclick="msg()">Submit Form</button>
+                        <button type="reset" class="button2" onclick="msg1()">Clear Form</button>
+                    </div>
+        
+                </form>
+        
+            </div>
+        </div>
+        
+    <script>
+        let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+        function msg() {
+          alert("Your request has been recorded");
+        }
+        
+          function msg1() {
+            alert("Deleted all");
+          }
+          </script>
+          <div id="Hotel">
+            <div class="h1">
+              <center>  <h1 class="text-center" ><span>Best </span>Hotels</h1></center>
+              <div class="fliplist">
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="h1.webp" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>The Breakers Palm Beach</h1> <br>
+                  <p><i class="fa fa-map-marker"></i>  1 S County Rd, Palm Beach<br> FL 33480,<h3>USA.</h3></p> <br>
+                  <p>standerd Room $99<br>Luxury Room $129</p><br>
+                  <p><a href="https://www.thebreakers.com/" >Click here</a>to book</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="h2.avif" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>Grand Central Hotel</h1> <br>
+                  <p><i class="fa fa-map-marker"></i> Michigan's Mackinac Island,<br> Grand Hotel beckons,<h3>USA.</h3></p> <br>
+                  <p>standerd Room $89<br>Luxury Room $119</p><br>
+                  <p><a href="https://www.grandhotel.com/" >Click here</a>to book</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="hh2.webp" alt="Avatar" style="width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <h1>The Royal Luxury Hotel</h1> <br>
+                  <p><i class="fa fa-map-marker"></i> Michigan's Mackinac Island,<br> Grand Hotel beckons,<h3>USA.</h3></p> <br>
+                  <p>standerd Room $59<br>Luxury Room $99</p><br>
+                  <p><a href="www.reallygreatsite.com" >Click here</a>to book</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <a href="#" class="btn">see more</a>
+        </div>
+      </div> 
+
+
+
+      <div id="Cab">
+        <div class="h1">
+          <center>  <h1 class="text-center" ><span>Best </span>Cab Services</h1></center>
+          <div class="fliplist">
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c1.webp" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>TOYOTO INNOVA CRYSTA</h1> <br>
+              <p><i class="fa fa-map-marker"></i> WORLD WIDE </p> <br>
+              <p>MINIMUM RENT $59<br>MAXIMUM RENT $99</p><br>
+              <p><a href="https://www.rentalcars.com/" >Click here</a>to book</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c2.avif" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>ENTERPRISE</h1> <br>
+              <p><i class="fa fa-map-marker"></i> WORLD WIDE </p> <br>
+              <p>MINIMUM RENT $35<br>MAXIMUM RENT $70</p><br>
+              <p><a href="https://www.enterprise.com/" >Click here</a>to book</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c3.jpeg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>National Car Rental</h1> <br>
+              <p><i class="fa fa-map-marker"></i> WORLD WIDE </p> <br>
+              <p>MINIMUM RENT $75<br>MAXIMUM RENT $82</p><br>
+              <p><a href="https://www.nationalcar.com/" >Click here</a>to book</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="#" class="btn">see more</a>
+    </div>
+  </div> 
+
+  <div id="Contact">
+  
+      <div class="row">
+        <div class="contact-left">
+           <center>  <h1 class="text-center" ><span>Contact </span>Us</h1></center>
+          <p><i class="fa-solid fa-paper-plane"></i> bb@gmail.com &nbsp;&nbsp;</p>
+          <p><i class="fa-solid fa-phone"></i> 0000000000</p><br><br>
+          <div class="social-icon">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>&nbsp;&nbsp;
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>&nbsp;&nbsp;
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div><br><br>
+   <center> <div class="copyright">
+      <p>copyright <i class="fa-solid fa-heart"></i></p>
+    </div></center>
+  
+    
+  
+</body>
+</html>
